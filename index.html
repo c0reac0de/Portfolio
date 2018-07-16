@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Dancing+Script|Great+Vibes|Homemade+Apple|Marck+Script|Satisfy|Shadows+Into+Light" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -14,11 +15,7 @@
       border-radius: 0;
     }
     
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
+ 
     
   .carousel-inner img {
       width: 75%; /* Set width to 100% */
@@ -32,6 +29,27 @@
       display: none; 
     }
   }
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Homemade Apple', cursive; */
+.display-4,.navbar-brand{
+  font-family: 'Homemade Apple', cursive;
+}
+.lead, h3, p,ul{
+  font-family: 'Shadows Into Light', cursive;
+}
+   /* Add a gray background color and some padding to the footer */
+   #footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+      font-family: 'Homemade Apple', cursive;
+    }
+
   </style>
 </head>
 <body>
@@ -71,6 +89,7 @@
 <div class="container text-center">    
   <h3>Passion projects </h3><br>
   
+  
 </div><br>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -86,30 +105,34 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/esvedra.JPG" alt="Image">
+          <a href="https://500px.com/arugulagalaxy">
+        <img src="img/esvedra.JPG" alt="Image" ></a>
         <div class="carousel-caption">
           <h3>nature/landscape photography</h3>
         </div>      
       </div>
 
       <div class="item">
-        <img src="img/caledonbees.JPG" alt="Image">
+          <a href="https://www.beelocal416.ca/">
+        <img src="img/caledonbees.JPG" alt="Image"></a>
         <div class="carousel-caption">
           <h3>beekeeping</h3>
-         
+          
         </div>      
       </div>
 
       <div class="item">
-        <img src="img/travestereoverlook.JPG" alt="Image">
+          <a href="http://tradeschool.coop/vancouver/class/hatha-yoga/">
+        <img src="img/travestereoverlook.JPG" alt="Image"></a>
         <div class="carousel-caption">
           <h3>travel</h3>
-         
+          
         </div>      
       </div>
 
       <div class="item">
-        <img src="img/followlittleones.JPG" alt="Image">
+          <a href="http://www.greenschoolibiza.com/index.php?page=home&lang=en">
+        <img src="img/followlittleones.JPG" alt="Image"></a>
         <div class="carousel-caption">
           <h3>early childhood education</h3>
     </div>
@@ -128,6 +151,7 @@
 </div>
 
 <br>
+<p class='text-center'>Click on the image above to discover more about my passions or continue on for my technical projects</p>
 <br>
 <br>
 <div class="container text-center">    
@@ -138,6 +162,7 @@
      <p>Giphy flower search</p>
      <div class="well">
         <p>Search the giphy universe for a flower and see what pops up!</p>
+        <a href="https://c0reac0de.github.io/giphy2/"><strong>Live on Git</strong></a>
        </div>
    </div>
  
@@ -146,6 +171,7 @@
     <p>Basketcase App</p>  
     <div class="well">
         <p>Make your list, get sh*t done!</p>
+        <a href="https://c0reac0de.github.io/Basketcase/"><strong>Live on Git</strong></a>
        </div>   
   </div>
   <div class="col-sm-4"> 
@@ -153,6 +179,7 @@
     <p>Frog flow guessing game</p>  
     <div class="well">
         <p>Guess which yoga pose the computer is thinking of!</p>
+        <a href="https://c0reac0de.github.io/frogflow/"><strong>Live on Git</strong></a>
        </div>   
   </div>
 
@@ -162,7 +189,7 @@
   <br>
   <br>
 <footer class="container-fluid text-center">
-  <p>Made with love 2018</p>
+  <p id="footer">Made with love 2018</p>
 </footer>
 
 </body>
