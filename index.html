@@ -1,196 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Candice Correa Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Cookie|Dancing+Script|Great+Vibes|Homemade+Apple|Marck+Script|Satisfy|Shadows+Into+Light" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
- 
-    
-  .carousel-inner img {
-      width: 75%; /* Set width to 100% */
-      margin: auto;
-      min-height:100px;
-  }
-
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
-/*
-font-family: 'Dancing Script', cursive;
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Great Vibes', cursive;
-font-family: 'Cookie', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Marck Script', cursive;
-font-family: 'Homemade Apple', cursive; */
-.display-4,.navbar-brand{
-  font-family: 'Homemade Apple', cursive;
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Cookie|Dancing+Script|Great+Vibes|Homemade+Apple|Marck+Script|Satisfy|Shadows+Into+Light" rel="stylesheet">
+<style>
+* {
+    box-sizing: border-box;
 }
-.lead, h3, p,ul{
-  font-family: 'Shadows Into Light', cursive;
-}
-   /* Add a gray background color and some padding to the footer */
-   #footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-      font-family: 'Homemade Apple', cursive;
-    }
 
-  </style>
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+    background: aliceblue ;
+}
+
+/* Header/logo Title */
+.header {
+    /* padding: 60px; */
+    text-align: center;
+    background: aliceblue url(/Users/user/Practice/portfolio/img/DSC_0639.JPG) 100%;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color: aliceblue;
+    color:black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    color: blue;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+h1,h2,h3,h5,a,footer{
+    font-family: 'Homemade Apple', cursive;
+}
+
+p{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: aliceblue url(/Users/user/Practice/portfolio/img/DSC_0639.JPG) 100%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
+</style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Candice Correa</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Hey there</h1>
-      <p class="lead">Welcome to my developing web developer website. I am eager to explore principles and patterns in programming and how they relate to those we see in nature.</p>
-    
-    </div>
-  </div>
+<!-- Note
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
+</div> -->
 
-  
-<div class="container text-center">    
-  <h3>Passion projects </h3><br>
-  
-  
-</div><br>
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-          <a href="https://500px.com/arugulagalaxy">
-        <img src="img/esvedra.JPG" alt="Image" ></a>
-        <div class="carousel-caption">
-          <h3>nature/landscape photography</h3>
-        </div>      
-      </div>
-
-      <div class="item">
-          <a href="https://www.beelocal416.ca/">
-        <img src="img/caledonbees.JPG" alt="Image"></a>
-        <div class="carousel-caption">
-          <h3>beekeeping</h3>
-          
-        </div>      
-      </div>
-
-      <div class="item">
-          <a href="http://tradeschool.coop/vancouver/class/hatha-yoga/">
-        <img src="img/travestereoverlook.JPG" alt="Image"></a>
-        <div class="carousel-caption">
-          <h3>travel</h3>
-          
-        </div>      
-      </div>
-
-      <div class="item">
-          <a href="http://www.greenschoolibiza.com/index.php?page=home&lang=en">
-        <img src="img/followlittleones.JPG" alt="Image"></a>
-        <div class="carousel-caption">
-          <h3>early childhood education</h3>
-    </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
+<!-- Header -->
+<div class="header">
+  <h1>Hey there</h1>
+  <p>Welcome to my <b>developing web developers</b> website.</p>
 </div>
 
-<br>
-<p class='text-center'>Click on the image above to discover more about my passions or continue on for my technical projects</p>
-<br>
-<br>
-<div class="container text-center">    
-    <h3>Technical Projects</h3><br>
+<!-- Navigation Bar -->
+<div class="navbar">
+  
+</div>
+
+<!-- The flexible grid (content) -->
 <div class="row">
-    <div class="col-sm-4">
-     <img src="img/hudsonbluepoppies.jpg" class="img-responsive" style="width:100%; height:295px" alt="Image">
-     <p>Giphy flower search</p>
-     <div class="well">
-        <p>Search the giphy universe for a flower and see what pops up!</p>
-        <a href="https://c0reac0de.github.io/giphy2/"><strong>Live on Git</strong></a>
-       </div>
-   </div>
- 
-<div class="col-sm-4"> 
-    <img src="img/sponge-basket-1194380_1920.jpg" class="img-responsive" style="width:100%; height:295px" alt="Image">
-    <p>Basketcase App</p>  
-    <div class="well">
-        <p>Make your list, get sh*t done!</p>
-        <a href="https://c0reac0de.github.io/Basketcase/"><strong>Live on Git</strong></a>
-       </div>   
-  </div>
-  <div class="col-sm-4"> 
-    <img src="img/frogs-2403525_1920.jpg" class="img-responsive" style="width:100%; height:295px" alt="Image">
-    <p>Frog flow guessing game</p>  
-    <div class="well">
-        <p>Guess which yoga pose the computer is thinking of!</p>
-        <a href="https://c0reac0de.github.io/frogflow/"><strong>Live on Git</strong></a>
-       </div>   
-  </div>
+  <div class="side">
+      <h2>About Me</h2>
+    <img src="/Users/user/Practice/portfolio/img/DSC_0153.JPG" alt="praguewall" style='width:70%; height:10%;'>
+      <p>I have had the pleasure of working as an early childhood educator, yoga instructor, beekeeper and ESL teacher. 
+   I enjoy biking along the Humber River, taking photos, practicing yoga, volunteering at local events. I look forward to taking on new projects and positions to improve my programming abilities and sharing my newfound understanding with others along the way.     
+    </p>
+    <p>Connect with me:</p>
+  <a href="https://github.com/c0reac0deli"><img src="/Users/user/Practice/portfolio/img/github-logo.jpg" style="width:5em; height: 5em;"></a>
+  <a href="https://www.linkedin.com/in/candice-correa/"><img src="/Users/user/Practice/portfolio/img/linkedin.png" style="width:5em; height: 5em;"></a>
 
-</div> 
+      <h3>Passion Projects</h3>
+      <p>Follow the links for to learn more about me..</p>
+     <a href="https://500px.com/arugulagalaxy"><img src="/Users/user/Practice/portfolio/img/DSC_0068.JPG" style="width:100%; height:15%;">Photography</a>
+     <a href="https://beewellto.wixsite.com/home"><img src="/Users/user/Practice/portfolio/img/playdscent.JPG" style="width:100%; height:15%;">Early Childhood Education</a>
+     <a href="https://beelocal416.ca"><img src="/Users/user/Practice/portfolio/img/caledonbees.JPG" style="width:100%; height:15%;">Beekeeping</a>
 </div>
-  <br>
-  <br>
-  <br>
-<footer class="container-fluid text-center">
-  <p id="footer">Made with love 2018</p>
-</footer>
+<br>
+  <div class="main">
+      <h2>TECHNICAL PROJECTS</h2>
+      <h5>Frog Flow 2018</h5>
+      <img src="/Users/user/Practice/portfolio/img/frogs-2403525_1920.jpg" style="width:100%" alt="frogs">
+      <p>A guessing game based on frog yoga poses</p>
+      <p>Used HTML, CSS, JAVASCRIPT to create this front-end game. <a href="https://c0reac0de.github.io/frogflow/"><strong>See it live on Git</strong></a></p>
+      <br>
+      <h5>BasketCase 2018</h5>
+      <img src="/Users/user/Practice/portfolio/img/basketcase.png" style="width:20%; height:10%" alt="BasketCase">
+      <p>A Group project</p>
+      <p>Used HTML, CSS, JAVASCRIPT, multiple APIs, AJAX and FireBase to create this full stack app.  <a href="https://c0reac0de.github.io/Basketcase/"><strong>See it live on Git</strong></a></p>
+      <br>
+      <h2>Giphy Flower Universe</h2>
+      <h5>Giphy API, 2018</h5>
+      <img src="/Users/user/Practice/portfolio/img/hudsonbluepoppies.jpg" style="width:100%" alt="flowers">
+      <p>Random flower fun</p>
+      <p>Using HTML,JAVASCRIPT and the Giphy API for a fun back-end game of gif discovery.  <a href="https://c0reac0de.github.io/giphy2/"><strong>See it live on Git</strong></a></p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Made with love 2018</h2>
+</div>
 
 </body>
 </html>
