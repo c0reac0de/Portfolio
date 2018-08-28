@@ -114,7 +114,7 @@ p, h3{
     position: absolute bottom;
     padding: 20px;
     text-align: center;
-    background: aliceblue url("img/papermarbling.JPG") 70em;
+    background: aliceblue url("../img/papermarbling.JPG") 70em;
     
     
 } 
@@ -125,74 +125,6 @@ p, h3{
         flex-direction: column;
     }
 }
-
-
-
-/* ---- stats.js 
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-  Keyword values
-user-select: none;
-user-select: auto;
-user-select: text;
-user-select: contain;
-user-select: all;
-
-Global values 
-user-select: inherit;
-user-select: initial;
-user-select: unset;
-
-Mozilla-specific values 
--moz-user-select: none;
--moz-user-select: text;
--moz-user-select: all;
-
- WebKit-specific values
--webkit-user-select: none;
--webkit-user-select: text;
--webkit-user-select: all; Doesn't work in Safari; use only
-                             "none" or "text", or else it will
-                             allow typing in the <html> container 
-
- Microsoft-specific values
--ms-user-select: none;
--ms-user-select: text;
--ms-user-select: element;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-} */
 
 /*style for Project slide out cards */
 .test {
